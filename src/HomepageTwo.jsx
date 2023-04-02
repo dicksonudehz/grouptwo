@@ -10,6 +10,16 @@ function HomepageTwo() {
     <div className="mainBodyContentCon">
       <nav>
           <DensityMediumIcon />
+          <input type="checkbox" className="checkboxed"/>
+          <div className="listItems">
+          <ul>
+            <li>home</li>
+            <li>home</li>
+            <li>home</li>
+            <li>home</li>
+            <li>home</li>
+          </ul>
+          </div>
         </nav>
       <div className="mainContainer">
         <div className="leftContainer">

@@ -7,6 +7,12 @@
   /* max-height: 100vh; */
   /* overflow: hidden; */
 }
+.checkboxed{
+  display: none;
+}
+.listItems{
+  display: none;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -82,19 +88,54 @@ nav {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #2f1893;
   }
 
   nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     padding-top: 20px;
     float: right;
     padding-right: 20px;
+    align-items: flex-start;
+    justify-content: flex-end;
     color: white;
     font-size: 25px !important;
+
     cursor: pointer;
   }
-
+  .listItems {
+    display: block;
+    z-index: 999;
+    width: 100%;
+    background-color: red;
+    display: none;
+  }
+  .checkboxed {
+    position: relative;
+    top: 7px;
+    left: 18px;
+    opacity: 0;
+  }
+  .listItems ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .checkboxed:checked ~ .listItems {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    z-index: 99999999999;
+  }
+  .listItems ul li {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+  .mainBodyContentCon {
+    background-color: transparent;
+  }
   .mainContainer {
     position: relative;
     display: flex;
