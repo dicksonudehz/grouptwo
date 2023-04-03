@@ -1,7 +1,7 @@
-// import HomepageFour from "./HomepageFour";
+import HomepageTwo from "./HomepageTwo";
 // import Homepageone from "./Homepageone";
 // import Homepagethree from "./Homepagethree";
-import HomepageTwo from "./HomepageTwo";
+// import HomepageFour from "./HomepageFour";
 
 function App() {
   return (
